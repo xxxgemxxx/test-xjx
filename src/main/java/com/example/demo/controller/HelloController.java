@@ -12,7 +12,7 @@ public class HelloController {
     @Autowired(required = false)
         ItemsMapper mapper;
 
-    @RequestMapping("/helloa")
+    @RequestMapping("/hell")
     public Items hello(Integer id) {
         Items items = mapper.selectByPrimaryKey(id);
         return items;
